@@ -78,7 +78,7 @@ public:
      *  Return the type of frame
      *  @return     uint8_t
      */ 
-    uint8_t type() const
+    uint8_t type() const override
     {
         return 3;
     }

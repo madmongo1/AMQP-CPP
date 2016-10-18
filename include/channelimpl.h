@@ -29,7 +29,7 @@ private:
      *  The actual channel object
      *  @var    Channel
      */
-    Channel *_parent;
+    Channel *_parent = nullptr;
 
     /**
      *  Pointer to the connection

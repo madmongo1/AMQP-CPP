@@ -123,7 +123,7 @@ public:
      *
      *  @return  double     value of decimalfield in double format
      */
-    operator double() const
+    operator double() const override
     {
         return _number / pow(10, _places);
     }
@@ -134,7 +134,7 @@ public:
      *
      *  @return  float     value of decimalfield in float format
      */
-    operator float() const
+    operator float() const override
     {
         return _number / pow(10, _places);
     }
