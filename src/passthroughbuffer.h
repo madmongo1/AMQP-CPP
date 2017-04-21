@@ -17,8 +17,8 @@
  */
 #include <memory>
 #include <cstring>
-#include "endian.h"
-#include "../include/frame.h"
+#include <amqpcpp/endian.h>
+#include <amqpcpp/frame.h>
 
 /**
  *  Set up namespace
