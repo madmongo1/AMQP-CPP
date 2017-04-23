@@ -208,6 +208,16 @@ public:
      *  Some classes have access to private properties
      */
     friend class ChannelImpl;
+
+
+    /** This is a hack to allow me to force a transport-layer error to manifest itself
+     * as an error callback
+     */
+
+    void notifyTransportError(std::string const& message)
+    {
+        _implementation.reportError(message.c_str());
+    }
 };
 
 /**
